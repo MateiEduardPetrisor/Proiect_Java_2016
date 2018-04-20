@@ -1,0 +1,6 @@
+exceptions.ValidateException Company Name Must Be At Least 3 Letters Long!
+exceptions.ValidateException Company Name Must Be At Least 3 Letters Long!
+exceptions.ValidateException Last Name Length Must Be Greather Than 5!
+exceptions.ValidateException Last Name Length Must Be Greather Than 5!
+exceptions.ValidateException Length Of A NIN Must Be 13!
+exceptions.ValidateException Length Of A NIN Must Be 13!

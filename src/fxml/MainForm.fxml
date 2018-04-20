@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="345.0" prefWidth="1216.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainFormController">
+   <children>
+      <ListView fx:id="listViewCompanies" layoutX="14.0" layoutY="14.0" onMouseClicked="#listViewCompaniesClickEvent" prefHeight="320.0" prefWidth="276.0">
+         <contextMenu>
+            <ContextMenu fx:id="contextMenuCompanies">
+              <items>
+                  <MenuItem fx:id="addCompanyMenuItem" mnemonicParsing="false" onAction="#addCompanyOnAction" text="Add Company" />
+                <MenuItem fx:id="updateCompanyMenuItem" mnemonicParsing="false" onAction="#updateCompanyOnAction" text="Edit Company" />
+                  <MenuItem fx:id="deleteCompanyMenuItem" mnemonicParsing="false" onAction="#deleteCompanyOnAction" text="Delete Company" />
+                  <MenuItem fx:id="addDepartmentMenuItem" mnemonicParsing="false" onAction="#addDepartmentOnAction" text="Add Department" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </ListView>
+      <ListView fx:id="listViewEmployees" layoutX="613.0" layoutY="14.0" prefHeight="320.0" prefWidth="592.0">
+         <contextMenu>
+            <ContextMenu fx:id="contextMenuEmployees">
+              <items>
+                  <MenuItem fx:id="updateEmployeeMenuItem" mnemonicParsing="false" onAction="#updateEmployeeOnAction" text="Edit Employee" />
+                  <MenuItem fx:id="deleteEmployeeMenuItem" mnemonicParsing="false" onAction="#deleteEmployeeOnAction" text="Delete Employee" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </ListView>
+      <ListView fx:id="listViewDepartments" layoutX="291.0" layoutY="14.0" onMouseClicked="#listViewDepartmentClickEvent" prefHeight="320.0" prefWidth="321.0">
+         <contextMenu>
+            <ContextMenu fx:id="ContextMenudepartments">
+              <items>
+                  <MenuItem fx:id="updateDepartmentMenuItem" mnemonicParsing="false" onAction="#updateDepartmentOnAction" text="Edit Department" />
+                  <MenuItem fx:id="deleteDepartmentMenuItem" mnemonicParsing="false" onAction="#deleteDepartmentOnAction" text="Delete Department" />
+                  <MenuItem fx:id="addEmployeeMenuItem" mnemonicParsing="false" onAction="#addEmployeeOnAction" text="Add Employee" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </ListView>
+   </children>
+</AnchorPane>

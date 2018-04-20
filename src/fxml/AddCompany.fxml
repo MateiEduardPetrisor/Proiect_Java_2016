@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="96.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddCompanyController">
+   <children>
+      <TextField fx:id="textFieldCompanyId" layoutX="115.0" layoutY="15.0" prefHeight="25.0" prefWidth="357.0" />
+      <TextField fx:id="textFiedlCompanyName" layoutX="115.0" layoutY="41.0" prefHeight="25.0" prefWidth="357.0" />
+      <Label fx:id="labelCompanyId" layoutX="14.0" layoutY="19.0" text="Compnay Id:" />
+      <Label fx:id="labelCompanyName" layoutX="14.0" layoutY="45.0" text="Company Name:" />
+      <Button fx:id="buttonAdd" layoutX="128.0" layoutY="70.0" mnemonicParsing="false" onAction="#addCompanyEvent" prefHeight="25.0" prefWidth="98.0" text="Add" />
+      <Button fx:id="buttonCancel" layoutX="259.0" layoutY="70.0" mnemonicParsing="false" onAction="#cancelAddCompanyEvent" prefHeight="25.0" prefWidth="98.0" text="Cancel" />
+   </children>
+</AnchorPane>

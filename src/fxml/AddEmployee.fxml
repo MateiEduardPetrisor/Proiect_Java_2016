@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="548.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddEmployeeController">
+   <children>
+      <Button fx:id="buttonAdd" layoutX="175.0" layoutY="204.0" mnemonicParsing="false" onAction="#addEmployeeEvent" prefHeight="25.0" prefWidth="92.0" text="Add" />
+      <Button fx:id="buttonCancel" layoutX="281.0" layoutY="204.0" mnemonicParsing="false" onAction="#cancelAddEmployeeEvent" prefHeight="25.0" prefWidth="92.0" text="Cancel" />
+      <TextField fx:id="textFieldEmployeeFirstName" layoutX="135.0" layoutY="40.0" prefHeight="25.0" prefWidth="404.0" />
+      <TextField fx:id="textFieldEmployeeLasrName" layoutX="135.0" layoutY="66.0" prefHeight="25.0" prefWidth="404.0" />
+      <TextField fx:id="textFieldEmployeeAge" layoutX="135.0" layoutY="92.0" prefHeight="25.0" prefWidth="404.0" />
+      <TextField fx:id="textFieldEmployeeNIN" layoutX="135.0" layoutY="118.0" prefHeight="25.0" prefWidth="404.0" />
+      <TextField fx:id="textFieldEmployeeId" layoutX="135.0" layoutY="14.0" prefHeight="25.0" prefWidth="404.0" />
+      <TextField fx:id="textFieldEmployeeSalary" layoutX="135.0" layoutY="170.0" prefHeight="25.0" prefWidth="404.0" />
+      <ComboBox fx:id="comboBoxEmployeeType" layoutX="135.0" layoutY="144.0" prefHeight="25.0" prefWidth="404.0" />
+      <Label fx:id="labelEmployeeFirstName" layoutX="14.0" layoutY="44.0" text="Employee First Name:" />
+      <Label fx:id="labelEmployeeLastName" layoutX="14.0" layoutY="70.0" text="Employee Last Name:" />
+      <Label fx:id="labelEmployeeAge" layoutX="14.0" layoutY="96.0" text="Employee Age:" />
+      <Label fx:id="labelEmployeeNIN" layoutX="14.0" layoutY="122.0" text="Employee NIN:" />
+      <Label fx:id="labelEmployeeId" layoutX="14.0" layoutY="18.0" text="Employee Id:" />
+      <Label fx:id="labelEmployeeType" layoutX="15.0" layoutY="148.0" text="Employee Type:" />
+      <Label fx:id="labelEmployeeSalary" layoutX="14.0" layoutY="174.0" text="Employee Salary:" />
+   </children>
+</AnchorPane>
